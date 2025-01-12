@@ -3,24 +3,21 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-// we cant able to re-render out count variable -> need to use the usestate hook;
-let count = 1;
-function Increase(count){
-  count = count + 1;
-}
-
-function Decrease(count){
-  count = count - 1;
-}
-
 function App() {
+  const [count,setCount] = useState(0);
+
   return (
-    <div>
-      count : {count}
-      <br />
-      <button onClick={()=> Increase(count)}>Increase</button>
-      <button onClick={()=> Decrease(count)}>Decrease</button>
-    </div> 
+    <div className="container"> 
+      <div >
+      <h1>Counter</h1>
+        <p> count : {count} </p>
+        
+        <button onClick={()=> setCount(count + 1)}>Increase</button>
+        <button onClick={()=> setCount(count - 1)}>Decrease</button>
+      </div>
+
+    </div>
+    
   )
 }
 

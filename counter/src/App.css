@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  margin: 10px;
+  cursor: pointer;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  height: 100vh;
+}
+p{
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+}
